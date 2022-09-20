@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    padding: 0px 1rem;
+}
+
+.accordian_body {
+    max-width: 600px;
+    margin: 0em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.8em 0em;
+}
+
+.accordian_body .heading {
+    margin-bottom: 20px;
+}
+
+.faq {
+    width: 100%;
+    background-color: #4caf50;
+    border-radius: 8px;
+    margin: 0em 0em 1.4em;
+    padding: 0.7em 1.4em;
+}
+
+.faq .faq_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0em;
+    padding: 0em;
+    color: #000;
+}
+
+.faq p {
+    font-size: 1em;
+    margin: 1.5em 0em 0em;
+    padding: 0em;
+    line-height: 27px;
+    color: #000;
+}
+
+.faq .show_btn {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background-color: black;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    margin: 0em;
+    border-radius: 120px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

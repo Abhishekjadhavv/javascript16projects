@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 1rem;
+    background-color: tomato; 
+}
+
+/* ---- utility classes here ---- */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.btn{
+    padding: 0.5rem 2rem;
+    border: none;
+    margin-top: 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    color: #262626;
+    transition: all 0.2s ease;
+}
+.btn:hover{
+    background-color: #262626;
+    color: #fff;
+}
+/* ------ input-field */
+
+.input-field,
+.content{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+.input-field input{
+    width: 100%;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 19px;
+    outline: none;
+    font-size: 15px;
+    color: #262626;
+}
+
+.content{
+   margin-top: 20px;
+}
+
+.text{
+    width: 100%;
+    background-color: cadetblue;
+    border-radius: 12px;
+    margin: 0.5em 0em;
+    padding: 0.5em;
+}
+.text b{
+    word-break: break-all;
+    color: #fff;
+}
+.caseName{
+    padding-right: 5px;
+    color: black !important ;
+}
