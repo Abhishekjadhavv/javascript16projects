@@ -52,6 +52,7 @@ function checkWinner(userChoice, computerChoice) {
     comp.textContent = computerChoice;
     if (userChoice === computerChoice) {
         win.textContent = "Game Draw";
+         return;
     }
 
     for (const situation of winningSituation) {
