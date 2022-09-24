@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png" />
+    <title>Janken - Rock Paper Scissor</title>
+</head>
+
+<body>
+    <header>
+        <h1>Janken - Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <div class="score-board flex center gap flex-wrap">
+            <div class="userscore">USER <span id="userScoreVal">0</span></div>
+            <div> : </div>
+            <div class="compscore"> <span id="compScoreVal">0</span> COMP</div>
+        </div>
+
+        <div class="result flex center flex-col gap">
+            <p id="result-user-stat" class="flex flex-wrap gap"><span>User</span> : <span id="user"></span></p>
+            <p id="result-comp-stat " class="felx flex-wrap gap"><span>Computer</span> : <span id="com"></span></p>
+            <p id="result-final-stat" class="felx flex-wrap gap"><span>Winner</span> : <span id="win"></span></p>
+        </div>
+
+        <div class="choices flex center gap flex-wrap">
+            <div class="choice" id="r">
+                <img src="Images/rock.png" alt="rock" id="Rock"/>
+            </div>
+            <div class="choice" id="p">
+                <img src="Images/paper.png" alt="paper" id="Paper"/>
+            </div>
+            <div class="choice" id="s">
+                <img src="Images/scissors.png" alt="scissors" id="Scissors"/>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
