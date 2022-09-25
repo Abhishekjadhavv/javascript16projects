@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Counter</h1>
+      <div class="counter">
+        <button onclick="decrease()">-</button>
+        <h1 id="number">0</h1>
+        <button onclick="increase()">+</button>
+      </div>
+      <p class="error">Error</p>
+    </div>
+  </body>
+
+  <script>
+    let num = document.querySelector("#number");
+
+    let  number = 0;
+    function increase(){
+        number += 1;
+        num.textContent = number; 
+        document.querySelector(".error").classList.remove("active");
+    }
+
+    function decrease(){
+        if(number >0){
+          number -= 1; 
+          num.textContent = number;
+        }else{
+            document.querySelector(".error").classList.add("active");
+        }
+    }
+
+  </script>
+</html>
